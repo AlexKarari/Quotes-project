@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-}
+  addQuote(Quote: InputElement, Author: InputElement, Name: InputElement): boolean {
+    console.log(`Adding famous quote: ${quote.value}, Adding quote author: ${author.value} and name: ${name.value}`);
+    return false;
+  }
