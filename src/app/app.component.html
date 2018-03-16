@@ -2,16 +2,23 @@
   <h3>TYPE YOUR QUOTE BELOW:</h3>
   <div class="field">
     <label for="quote">Quote:</label>
-    <input name="quote" #newquote> <!--changed-->
+    <input name="quote" #newquote>
+    <!--changed-->
   </div>
   <div class="field">
     <label for="author">Author:</label>
-    <input name="author" #newauthor> <!--changed -->
+    <input name="author" #newauthor>
+    <!--changed -->
   </div>
   <div class="field">
     <label for="name">Name:</label>
-    <input name="name" #newname> <!--changed-->
+    <input name="name" #newname>
+    <!--changed-->
   </div>
   <!--Button added-->
-  <button (click)="addQuote(newquote, newauthor, newname)">Submit Quote</button>
+  <button (click)="addQuote(newquote, newauthor, newname)" class="ui positive right floated button">Submit Quote</button>
 </form>
+
+<div class="ui grid posts">
+  <app-quote></app-quote>
+</div>

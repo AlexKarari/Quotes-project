@@ -22,9 +22,11 @@ export class QuoteComponent implements OnInit {
 
   voteUp() {
     this.votes +=1;
+    return false;
   }
-  voteDown(){
+  voteDown() {
     this.votes +=1;
+    return false;
   }
 
   ngOnInit() {
