@@ -14,7 +14,7 @@ terrible or are inspirational. A user will be able to:
 ## Setup/Installation Requirements
 
 -Have Ubuntu OS to run the application.
-- Make sure NPM has been installed.
+- Make sure npm has been installed.
 - Make sure you have typescript installed. If not, run "$ install -g typescript."
 - Browser recommended is Google Chrome.
 - Install Angular CLI by running "$ npm install -g @angular/cli"
