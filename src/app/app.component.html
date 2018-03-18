@@ -1,3 +1,5 @@
+<h1>WELL REKNOWNED QUOTES</h1>
+<hr>
 <form>
   <h3>TYPE YOUR QUOTE BELOW:</h3>
   <div class="field">
@@ -16,9 +18,9 @@
     <!--changed-->
   </div>
   <!--Button added-->
-  <button (click)="addQuote(newquote, newauthor, newname)" class="ui positive right floated button">Submit Quote</button>
+  <button (click)="addQuotes(newquote, newauthor, newname)" class="ui positive right floated button">Submit Quote</button>
 </form>
-
+<hr>
 <div class="ui grid posts">
-  <app-quote></app-quote>
+  <app-quote *ngFor="let quote of quotes"[quote]="quote"></app-quote>
 </div>

@@ -1,7 +1,7 @@
 <div class="four wide column center aligned votes">
   <div class="ui statistic">
     <div class="value">
-      {{ votes }}
+      {{ quote.votes }}
     </div>
     <div class="label">
       Points
@@ -9,9 +9,9 @@
   </div>
 </div>
 <div class="twelve wide column">
-  <a class="ui large header" href="{{ Quote }}">
-{{ Quote }}
-</a>
+  <h3>{{ quote.Quote }}</h3>
+  <h4>{{ author.Author }}</h4>
+  <h4>{{ name.Name }}</h4>
   <ul class="ui big horizontal list voters">
     <li class="item">
       <a href (click)="voteUp()">
