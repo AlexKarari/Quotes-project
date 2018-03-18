@@ -14,11 +14,11 @@ export class QuoteComponent implements OnInit {
   constructor() { }
 
   voteUp() {
-    this.Quote.voteUp();
+    this.quote.voteUp();
     return false;
   }
   voteDown() {
-    this.Quote.voteDown();
+    this.quote.voteDown();
     return false;
   }
 
