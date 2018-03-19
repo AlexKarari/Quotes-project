@@ -1,29 +1,3 @@
-<div class="four wide column center aligned votes">
-  <div class="ui statistic">
-    <div class="value">
-      {{ quote.votes }}
-    </div>
-    <div class="label">
-      Points
-    </div>
-  </div>
-</div>
-<div class="twelve wide column">
-  <h2>{{ quote.Quote }}</h2>
-  <h3>{{ quote.Author }}</h3>
-  <h4>{{ quote.Name }}</h4>
-  <ul class="ui big horizontal list voters">
-    <li class="item">
-      <a href (click)="voteUp()">
-<i class="arrow up icon"></i>
-upvote
-</a>
-    </li>
-    <li class="item">
-      <a href (click)="voteDown()">
-<i class="arrow down icon"></i>
-downvote
-</a>
-    </li>
-  </ul>
-</div>
+<app-quote-form></app-quote-form>
+<hr>
+<app-quote-details></app-quote-details>

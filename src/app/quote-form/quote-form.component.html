@@ -1,0 +1,22 @@
+<h1>WELL REKNOWNED QUOTES</h1>
+<hr>
+<form>
+  <h3>TYPE YOUR QUOTE BELOW:</h3>
+  <div class="field">
+    <label for="quote">Quote:</label>
+    <input name="quote" #newquote>
+    <!--changed-->
+  </div>
+  <div class="field">
+    <label for="author">Author:</label>
+    <input name="author" #newauthor>
+    <!--changed -->
+  </div>
+  <div class="field">
+    <label for="name">Name:</label>
+    <input name="name" #newname>
+    <!--changed-->
+  </div>
+  <!--Button added-->
+  <button (click)="addQuotes(newquote, newauthor, newname)" class="ui positive right floated button">Submit Quote</button>
+</form>
