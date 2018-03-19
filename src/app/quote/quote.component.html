@@ -1,3 +1,14 @@
-<app-quote-form></app-quote-form>
+<h1>Quotes</h1>
 <hr>
-<app-quote-details></app-quote-details>
+
+<ul>
+    <div *ngFor='let quote of quotes'>
+        <li >{{quote.name}}</li>
+        <app-quote-details [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+    </div>
+</ul>
+<div class="container">
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+</div>

@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
-import { Quotes } from './quote.model';
+import { Component, OnInit } from '@angular/core';
+import {Quote} from '../quote';
+
 
 @Component({
   selector: 'app-quote',
@@ -8,19 +9,22 @@ import { Quotes } from './quote.model';
 })
 export class QuoteComponent implements OnInit {
 
-  @HostBinding('attr.class') cssClass = 'row';
-  @Input() quote: Quotes;
+  quotes = [
+    new Quote ('Better safe than sorry', 'Albert', 'Alex'),
+  ];
+
+  completeQuote(isComplete, index) {
+       if (isComplete) {
+           this.quotes.splice(index, 1);
+           }
+           }
+addNewQuote(quote) {
+this.quotes.push(quote);
+}
+
 
   constructor() { }
 
-  voteUp() {
-    this.quote.voteUp();
-    return false;
-  }
-  voteDown() {
-    this.quote.voteDown();
-    return false;
-  }
 
   ngOnInit() {
   }
