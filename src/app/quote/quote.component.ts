@@ -9,7 +9,9 @@ import {Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes = [];
+  quotes = [
+    new Quote ('Better safe than sorry', 'Albert', 'Alex'),
+  ];
 
   completeQuote(isComplete, index) {
        if (isComplete) {
