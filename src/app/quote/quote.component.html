@@ -1,16 +1,24 @@
-<h1>Quotes</h1>
+<div class="head">
+  <h1>QUOTES</h1>
+  <h4>WELL REKNOWNED QUOTES</h4>
+</div>
 <hr>
-
 <div class="container">
-    <div class="row">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  <div class="row">
+    <div class="col-md-12">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
+    <div class="col-md-12">
+      <div *ngFor='let quote of quotes'>
+        <li>{{quote.name}}</li>
+        <app-quote-details [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+      </div>
+    </div>
+
+  </div>
 </div>
 <br>
 
 <ul>
-  <div *ngFor='let quote of quotes'>
-    <li >{{quote.name}}</li>
-    <app-quote-details [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
-  </div>
+
 </ul>
