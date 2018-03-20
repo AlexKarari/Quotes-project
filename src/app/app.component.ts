@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {Quote} from './quote';
 
 
@@ -18,7 +18,7 @@ export class AppComponent {
     allowEdit: true,
     disabled: false
   };
-  votes: 123; // total amount of votes
+  votes: 10; // total amount of votes
   selectedVote: 0; // not voted yet
 
   onVote(vote) {

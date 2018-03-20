@@ -2,25 +2,24 @@
     <div class="row">
 <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
   <h3>TYPE YOUR QUOTE BELOW:</h3>
-  <div class="field">
+  <div class="form-group">
     <label for="quote">Quote:</label>
-    <input name="quote" id="quote" [(ngModel)]="newQuote.name">
+    <input name="quote" class="form-control" id="quote" [(ngModel)]="newQuote.name">
 
   </div>
-  <div class="field">
+  <div class="form-group">
     <label for="author">Author:</label>
-    <input name="author" id="author" [(ngModel)]="newQuote.author">
+    <input name="author" class="form-control" id="author" [(ngModel)]="newQuote.author">
 
   </div>
-  <div class="field">
+  <div class="form-group">
     <label for="name">Name:</label>
-    <input name="name" id="name" [(ngModel)]="newQuote.submit">
+    <input name="name" class="form-control" id="name" [(ngModel)]="newQuote.submit">
 
   </div>
   <!--Button added-->
-  <button  class="ui positive right floated button">Submit Quote</button>
+  <button  class="btn btn-outline-success">Submit Quote</button>
 </form>
 </div>
 </div>
 <hr>
-<h3>QUOTES SUBMITTED:</h3>
