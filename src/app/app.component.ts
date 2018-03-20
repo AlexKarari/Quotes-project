@@ -13,6 +13,17 @@ export class AppComponent {
     new Quote ('Better safe than sorry', 'Albert', 'Alex'),
   ];
 
+  voteConfig: {
+    cssClass: 'my-class',
+    allowEdit: true,
+    disabled: false
+  };
+  votes: 123; // total amount of votes
+  selectedVote: 0; // not voted yet
+
+  onVote(vote) {
+    console.log('onVote response: ', vote);
+  }
 
   constructor() {
 
