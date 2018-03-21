@@ -2,10 +2,14 @@
   Author: {{quote.author}}
 </p>
 <p>Submitted By: {{quote.submit}}</p>
-
-<!-- Upvote/downvote -->
-<ng-vote (vote)="onVote($event)">
-  <ng-vote-up>Up</ng-vote-up>
-  <ng-vote-down>Down</ng-vote-down>
-</ng-vote>
+<div class="row">
+ <div class="col-md-6">
+   <a class="btn btn-success" href="" (click)="voteUp()">LIKE ({{upVote}})
+   </a>
+ </div>
+ <div class="col-md-6">
+   <a class="btn btn-danger" href="" (click)="voteDown()">HATE ({{downVote}})
+    </a>
+ </div>
+</div>
 <button (click)='quoteComplete(true)' class="btn btn-outline-danger"> Delete </button>
