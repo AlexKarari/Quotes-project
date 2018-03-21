@@ -126,6 +126,10 @@ MIT
 MIT
 MIT
 
+ng-vote@0.1.5
+MIT
+MIT
+
 @angular/common@5.2.9
 MIT
 MIT
